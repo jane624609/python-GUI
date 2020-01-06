@@ -1,0 +1,12 @@
+#印出tkinter版本
+import tkinter
+print(tkinter.TkVersion)
+
+#建立視窗，視窗預設名稱是tk
+from tkinter import *
+
+root = Tk()
+root.title('jane') #視窗標題
+root.geometry('300x360') #視窗大小
+root.configure(bg='red') #視窗背景顏色
+root.mainloop()
