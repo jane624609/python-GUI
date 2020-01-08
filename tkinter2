@@ -1,0 +1,69 @@
+#標籤Label
+#語法: Label(父物件, options, ...)
+
+from tkinter import *
+
+root = Tk()
+root.title('ch2_1')
+lable = Label(root, text = 'I like tkinter')
+lable.pack() #包裝與定位物件 https://blog.csdn.net/liuxu0703/article/details/54428405
+print(type(lable))#傳回lable物件
+
+root.mainloop()
+
+
+#Widget共通屬性
+#Color、Dimensions大小、Anchor錨、wraplength文字輸出換行位置、Font字型、justify參數
+#設定文字前景顏色藍色，背景顏色黃色，標籤寬高，字串從標籤左上輸出，40像素後自動換行，使用Helevetica字型、大小20、粗體、文字靠左對齊
+from tkinter import *
+
+root = Tk()
+root.title('ch2_3')
+label = Label(root, text = 'I like tkinter aaaaaaaaaaaaa', fg = 'blue', bg = 'yellow', height = 8, width = 15, anchor = 'nw', wraplength = 140, font = 'Helevetica 20 bold', justify = 'left')
+label.pack()
+
+root.mainloop()
+
+
+#Bitmaps位元圖、compound參數
+from tkinter import *
+
+root = Tk()
+root.title('ch2_13')
+label = Label(root, bitmap = 'hourglass', compound = 'left', text = '我的天空')
+label.pack()
+
+root.mainloop()
+
+
+#Relief style 建立控鍵邊框
+from tkinter import *
+
+root = Tk()
+root.title('ch2_17')
+
+label = Label(root, text = 'hi,are you ok?', relief = 'raised')
+label.pack()
+
+root.mainloop()
+
+
+#padx/pady  標籤文字與標籤區間的間距
+from tkinter import *
+
+root = Tk()
+root.title('ch2_18')
+label = Label(root, text = 'OMG', relief = 'raised', bg = 'lightyellow', padx = 5, pady = 10)
+label.pack()
+
+root.mainloop()
+
+
+
+
+
+
+
+
+
+
